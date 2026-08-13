@@ -31,7 +31,7 @@ func main() {
 
 	cfg := analyzer.Config{
 		// TODO: заменить на реальный import path.
-		VarPackagePath: "github.com/rusl222/scada/scada",
+		VarPackagePath: "github.com/rusl222/scada/types",
 
 		VarTypeName:     "Var",
 		BindMethodName:  "Bind",
