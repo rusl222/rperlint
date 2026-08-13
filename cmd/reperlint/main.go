@@ -31,7 +31,7 @@ func main() {
 
 	cfg := analyzer.Config{
 		// TODO: заменить на реальный import path.
-		VarPackagePath: "example.com/reperlint/scada",
+		VarPackagePath: "github.com/rusl222/scada/scada",
 
 		VarTypeName:     "Var",
 		BindMethodName:  "Bind",

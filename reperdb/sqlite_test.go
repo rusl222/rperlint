@@ -100,7 +100,7 @@ func createTestDatabase(t *testing.T, db *sql.DB) {
 		)
 		`,
 		`
-		CREATE TABLE not_params (
+		CREATE TABLE notparams (
 			id INTEGER PRIMARY KEY,
 			raper TEXT
 		)
@@ -118,7 +118,7 @@ func createTestDatabase(t *testing.T, db *sql.DB) {
 			('DEF')
 		`,
 		`
-		INSERT INTO not_params (raper)
+		INSERT INTO notparams (raper)
 		VALUES
 			('SHOULD_NOT_BE_LOADED')
 		`,

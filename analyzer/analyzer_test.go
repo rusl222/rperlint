@@ -10,7 +10,7 @@ func TestAnalyzer(t *testing.T) {
 	testdata := analysistest.TestData()
 
 	cfg := Config{
-		VarPackagePath: "github.com/rusl222/scada/testdata/src/scada",
+		VarPackagePath: "github.com/rusl222/scada/analyzer/testdata/src/scada",
 		VarTypeName:    "Var",
 		BindMethodName: "Bind",
 
