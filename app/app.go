@@ -1,9 +1,9 @@
 package app
 
 import (
-	"algo/internal/logger"
+	"github.com/rusl222/scada/logger"
 
-	"algo/lib/debug"
+	"github.com/rusl222/scada/debug"
 
 	"context"
 	"log/slog"

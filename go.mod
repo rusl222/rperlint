@@ -3,6 +3,7 @@ module github.com/rusl222/scada
 go 1.25.5
 
 require (
+	github.com/rabbitmq/amqp091-go v1.13.0
 	golang.org/x/tools v0.49.0
 	modernc.org/sqlite v1.56.0
 )

@@ -1,8 +1,9 @@
 package debug
 
 import (
-	"algo/internal/logger"
 	"testing"
+
+	"github.com/rusl222/scada/logger"
 )
 
 func TestSetAndGetAssignable(t *testing.T) {
