@@ -2,6 +2,7 @@ package analyzer
 
 import (
 	"go/ast"
+	"go/constant"
 	"go/types"
 
 	"github.com/rusl222/scada/reperdb"
@@ -119,14 +120,14 @@ func constantString(
 		return "", false
 	}
 
-	if tv.Type == nil {
+	basic, ok := tv.Type.(*types.Basic)
+	if !ok {
 		return "", false
 	}
 
-	// Ensure the expression has a basic string type.
-	if basic, ok := tv.Type.Underlying().(*types.Basic); !ok || basic.Kind() != types.String {
+	if basic.Info()&types.IsString == 0 {
 		return "", false
 	}
 
-	return tv.Value.String(), true
+	return constant.StringVal(tv.Value), true
 }

@@ -1,17 +1,16 @@
 package example
 
 import (
+	"scada"
 	"time"
-
-	"github.com/rusl222/scada/analyzer/testdata/src/scada"
 )
 
 var api scada.Api
 
 var alg struct {
-	q1 *scada.Var[int]
-	q2 *scada.Var[float64]
-	q3 *scada.Var[time.Time]
+	q1 scada.Var[int]
+	q2 scada.Var[float64]
+	q3 scada.Var[time.Time]
 }
 
 const (
