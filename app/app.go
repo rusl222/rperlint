@@ -3,7 +3,7 @@ package app
 import (
 	"github.com/rusl222/scada/logger"
 
-	"github.com/rusl222/scada/debug"
+	debug "github.com/rusl222/scada/debugger"
 
 	"context"
 	"log/slog"

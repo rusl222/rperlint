@@ -1,0 +1,100 @@
+:root {
+    color-scheme: light;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #2d3436;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+}
+
+#toolbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#search {
+    width: 250px;
+    padding: 5px;
+}
+
+#status {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+}
+
+thead {
+    position: sticky;
+    top: 48px;
+    background: #ddd;
+}
+
+th,
+td {
+    border: 1px solid #bbb;
+    padding: 0 0 0 5px;
+    font-size: 13px;
+}
+
+tr.changedxxx {
+    animation: flash 1s;
+}
+
+@keyframes flash {
+    from {
+        background: #ffeaa7;
+    }
+    to {
+        background: white;
+    }
+}
+
+.float {
+    background: #eef7ff;
+}
+
+.int {
+    background: #fff7ea;
+}
+
+.booltrue {
+    background: #e8ffe8;
+}
+
+.boolfalse {
+    background: #fff;
+}
+
+.favorite {
+    cursor: pointer;
+    width: 24px;
+    text-align: center;
+}
+
+.value {
+    width: 90px;
+    margin: 1px;
+}
+
+.timeout {
+    width: 70px;
+}
+
+button {
+    padding: 3px 10px;
+}
