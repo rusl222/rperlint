@@ -112,7 +112,7 @@ func findParamsTables(db *sql.DB) ([]string, error) {
 
 func loadTableReper(db *sql.DB, table string) ([]string, error) {
 	query := fmt.Sprintf(
-		`SELECT raper FROM %s WHERE raper IS NOT NULL`,
+		`SELECT raper FROM %s WHERE raper OR name IS NOT NULL`,
 		quoteIdentifier(table),
 	)
 
